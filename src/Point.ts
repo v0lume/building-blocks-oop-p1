@@ -33,6 +33,6 @@ export class Point {
             return 0;
         }
 
-        return Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2));
+        return +Math.sqrt(Math.pow(+distanceX, 2) + Math.pow(+distanceY, 2)).toFixed(3);
     }
 }

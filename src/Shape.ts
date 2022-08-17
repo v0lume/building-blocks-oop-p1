@@ -16,6 +16,8 @@ export abstract class Shape {
         this.points = points;
     }
 
+    abstract getType(): string;
+
     toString(): string {
         const pointsString = this.points.map(point => point.toString()).join(', ');
 
